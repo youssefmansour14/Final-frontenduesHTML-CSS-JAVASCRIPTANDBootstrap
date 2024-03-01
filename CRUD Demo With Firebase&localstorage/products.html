@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- <link rel="stylesheet" href="style.css" /> -->
+  <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+</head>
+
+<body>
+  
+    <br>
+    <h1 style="text-align: center;">Products</h1>
+    <br>
+    <a href="index.html" class="btn btn-warning w-50 mx-auto d-block my-3 text-dark "> Back To Controle Panel</a>
+    <br>
+  <div class="container">
+    <lable for="ProductCategory">ProductCategory :</lable>
+    <input type="text" class="form-control mb-3" id="ProductCategory">
+    <lable for="ProductTitle">ProductTitle :</lable>
+    <input type="text" class="form-control mb-3" id="ProductTitle">
+    <lable for="ProductRate">ProductRating :</lable>
+    <input type="number" class="form-control mb-3" id="ProductRate">
+    <lable for="ProductPrice">ProductPrice :</lable>
+    <input type="number" class="form-control mb-3" id="ProductPrice">
+    <lable for="ProductImageUrl">ProductImageUrl :</lable>
+    <div class="input-group mb-3">
+      <input type="url" class="form-control mb-3" id="ProductImageUrl">
+        <div class="input-group-prepend">
+          <button class="btn btn-outline-secondary" type="button" onclick="selectFile()">select</button>
+        </div>
+        <input type="file" name="selectFile" id="selectFile" class="d-none" accept="image/png, image/jpeg" onchange="getImgSrc()">
+    </div>
+    <lable for="ProductDescription">ProductDescription :</lable>
+    <textarea type="text" class="form-control mb-3" id="ProductDescription"></textarea>
+  </div>
+
+  <div class="buttons">
+    <button id="UpdateBtn"  class="btn btn-outline-warning w-50 mx-auto d-none text-dark my-3"><i
+      class="fa-solid fa-edit"></i>
+    UpdateThisProduct</button>
+  <button id="DeleteBtn" class="btn btn-outline-danger w-50 mx-auto d-none my-3 text-dark"><i
+      class="fa-solid fa-trash"></i> DeleteThisProduct</button>
+    <button id="AddBtn" class="btn btn-outline-primary w-75 mx-auto d-block text-dark"><i
+        class="fa-solid fa-upload"></i>
+      AddNewProduct</button>
+      <button id="ShowBtn" class="btn btn-outline-success w-75 mx-auto d-block my-3 text-dark"><i
+        class="fa-solid fa-eye"></i> SelectProductTo(Update||Delete)</button>
+       
+  </div>
+  </div>
+  <div class="w-75 mx-auto my-3">
+    <table class="table table-bordered table-dark text-center ">
+      <thead>
+        <th>Id</th>
+        <th>Price</th>
+        <th>Category</th>
+        <th>Image</th>
+        <th>Rating</th>
+        <th>Title</th>
+        <th>Description</th>
+      </thead>
+      <tbody id="body" class="table text-center">
+
+      </tbody>
+    </table>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-database.js"></script>
+  
+  <script src="./fireConfig.js"></script>
+
+  <script src="./products.js"></script>
+</body>
+
+</html>

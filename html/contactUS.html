@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Now</title>
+    <!-- title icon -->
+    <link rel="shortcut icon" href="../resources/icons8-shop-static.png" type="image/x-icon">
+    <!-- stylesheets links -->
+    <link rel="stylesheet" href="../css/contactUS.css">
+     <!-- font asome cdn link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+
+</head>
+
+<body>
+
+    <div class="header-icons">
+        <div class="cart-icon">
+          <a href="checkout.html">
+               <i class="fa fa-cart-shopping"></i>
+           </a>
+       </div>
+       <div class="home-icon">
+           <a href="home.html">
+               <i class="fa-solid fa-house"></i>
+           </a>
+       </div>
+      </div>
+
+    <div class="content">
+    <form action="" id="formty"  >
+    <fieldset>
+
+    
+    <legend>Your rating on the products</legend>
+    
+  
+    <input type="text " name="user" id="inputUser" required  placeholder="enter your name sir" > <br>
+    <input type="email" name="mail" id="emailUser" required   placeholder="enter your email sir" ><br>
+
+    <!-- to choose product  -->
+    <select name="category" id="category" onchange="fillProductsSelect()">
+        <option value="none">Select the category</option>
+    </select>
+    <select name="products" id="products"></select>
+    <textarea name="input_box" id="inputBox" cols="32" rows="8" required placeholder="enter your feedback" id="txteAr" style="margin: 8px;" ></textarea> <br>
+    
+    <input type="button" id="btn"  value="Display Data" onclick="feedback()" />
+</fieldset>
+</form>
+<div id="contaner">
+    <input type="button" onclick="showfeedback()" name="showCommen" id="show" value="show" >
+    
+   
+</div>
+</div>
+
+
+ <!-- script files links -->
+ <script src="../js/contactUS.js"></script>
+</body>
+</html>

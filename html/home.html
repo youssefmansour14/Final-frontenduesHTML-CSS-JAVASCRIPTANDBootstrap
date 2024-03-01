@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Now</title>
+    <!-- title icon -->
+    <link rel="shortcut icon" href="../resources/icons8-shop-static.png" type="image/x-icon">
+    <!-- link to font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- stylesheets links -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+     <!-- font asome cdn link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- link to use icons by boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <header id="header">
+
+        </header>
+        <main>
+            <!-- Best selling section that contain the most selling products  -->
+            <section>
+                <div class="sectionTitle">
+                    <h2>Best Selling</h2>
+                    <i class="fa-solid fa-arrow-right" onclick="goToBestSelling()"></i>
+                </div>
+                <div class="productInfo" id="bestSelling">
+
+                </div>
+            </section>
+            <!-- end of the best selling section -->
+
+            <!-- section fashion category -->
+            <section>
+                <div class="sectionTitle">
+                    <h2>Fashion</h2>
+                    <i class="fa-solid fa-arrow-right" onclick="goToFashionCategory()"></i>
+                </div>
+                <div class="productInfo"  id="fashion">
+
+                </div>
+            </section>
+            <!-- end of the fashion section  -->
+
+            <!-- start of the Sales section -->
+            <!-- section sales -->
+            <section id="sales">
+                <div class="sectionTitle">
+                    <h2>Sales</h2>
+                    <i class="fa-solid fa-arrow-right""></i>
+                </div>
+                <!-- Box num 1 -->
+                <div class="productInfo">
+                    <!-- product container that contain the image , price , product name and the button -->
+                    <div class="productContainer">
+                        <div class="sale">45%</div>
+                        <img src="../resources/laptop-img.png" alt="">
+                        <h2 class="title">laptop</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, provident.</p>
+                        <span class="productPrice">2000$</span>
+                        <span class="actualPrice">3800$</span>
+                        <button type="button">Buy Now</button>
+                    </div>
+                    
+                    <!-- Box num 2 -->
+                    <!-- product container that contain the image , price , product name and the button -->
+                    <div class="productContainer">
+                        <div class="sale">25%</div>
+                        <img src="../resources/dress-shirt-img.png" alt="">
+                        <h2 class="title">dress shirt</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, eos.</p>
+                        <span class="productPrice">55$</span>
+                        <span class="actualPrice">75$</span>
+                        <button type="button">Buy Now</button>
+                    </div>
+
+                    <!-- Box num 3 -->
+                    <!-- product container that contain the image , price , product name and the button -->
+                    <div class="productContainer">
+                        <div class="sale">15%</div>
+                        <img src="../resources/kangan-img.png" alt="">
+                        <h2 class="title">Kangan</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, delectus.</p>
+                        <span class="productPrice">555$</span>
+                        <span class="actualPrice">650$</span>
+                        <button type="button">Buy Now</button>
+                    </div>
+                </div>
+            </section>
+            <!-- end of sales section -->
+        </main>
+        <footer id="footer">
+
+        </footer>
+    </div>
+    
+    <!-- js ajax -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $("#footer").load("footer.html");
+            $("#header").load("header.html");
+        })
+    </script>
+    <!-- script files links -->
+    <script src="../js/script.js"></script>
+    <script src="../js/addProductTocard.js"></script>
+    <script src="../js/registeration.js"></script>
+</body>
+</html>

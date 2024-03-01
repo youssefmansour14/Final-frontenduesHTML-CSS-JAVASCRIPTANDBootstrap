@@ -1,0 +1,40 @@
+
+	<header>
+		<a href="home.html"><img src="../resources/logo.png" alt="Logo"></a>
+		<h1>Get Now </h1>
+
+		<nav>
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="../child/abc.html">Children Learn</a></li>
+				<li><a href="contactUS.html">Contact Us</a></li>
+				<li><a href="#">Categories</a>
+					<ul class="nestedList">
+						<li><a href="productSearch.html?search=Fashion">Fashion</a></li>
+						<li><a href="productSearch.html?search=Electronics">Electronics</a></li>
+						<li><a href="productSearch.html?search=Jewelery">Jewelery</a></li>
+					</ul>
+				</li>
+				<li>
+					<button type="button"  class="logout" id="btnlog">U</button>
+					<ul class="btn-log-list">
+						<!-- <li><button type="button" id="profileAc">Profile</button></li> -->
+						<li><button type="button" id="log-btn" onclick="logOut()">LogOut</button></li>
+					</ul>
+				</li>
+			</ul>
+			<!-- cart icon -->
+			<div class="cart-icon">
+				<a href="checkout.html">
+					 <i class="fa fa-cart-shopping"></i>
+				 </a>
+			</div>
+
+		</nav>
+		<form class="search-form" method="get" action="productSearch.html">
+			<input type="text" name="search" class="search-input" placeholder="Search for products..."> <button type="submit"
+				class="search-button">Search</button></input>
+
+		</form>
+
+	</header>

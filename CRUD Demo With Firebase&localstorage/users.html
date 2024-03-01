@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CRUD with Firebase</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+</head>
+
+<body>
+  <br>
+  <h1 style="text-align: center;">Users</h1>
+  <br>
+  <a href="index.html" class="btn btn-warning w-50 mx-auto d-block my-3 text-dark "> Back To Controle Panel</a>
+  <br>
+  <div class="container">
+    <lable for="UserEmail"> User-Email :</lable>
+    <input type="text" class="form-control mb-3" id="UserEmail">
+    <lable for="UserPassword">User-Password :</lable>
+    <input type="password" class="form-control mb-3" id="UserPassword">
+    <lable for="UserName">User-Name :</lable>
+    <input type="text" class="form-control mb-3" id="UserName">
+    <lable for="IsAdmin">Is-Admin :</lable>
+    <input type="number" class="form-control mb-3" id="IsAdmin">
+  </div>
+  <div class="buttons">
+    <button id="UpdateBtn"  class="btn btn-outline-warning w-50 mx-auto d-none text-dark my-3"><i
+      class="fa-solid fa-edit"></i>
+    UpdateThisUser</button>
+  <button id="DeleteBtn" class="btn btn-outline-danger w-50 mx-auto d-none my-3 text-dark"><i
+      class="fa-solid fa-trash"></i> DeleteThisUser</button>
+    <button id="AddBtn" class="btn btn-outline-primary w-75 mx-auto d-block text-dark"><i
+        class="fa-solid fa-upload"></i>
+      AddNewUser</button>
+      <button id="ShowBtn" class="btn btn-outline-success w-75 mx-auto d-block my-3 text-dark"><i
+        class="fa-solid fa-eye"></i> SelectUserTo(Update||Delete)</button>
+  </div>
+  </div>
+
+  <div class="w-75 mx-auto my-3">
+    <table class="table table-bordered table-dark text-center ">
+      <thead>
+        <th>Email</th>
+        <th>Password</th>
+        <th>User-Name</th>
+        <th>Is-Admin</th>
+      </thead>
+      <tbody id="body" class="table text-center">
+      </tbody>
+    </table>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-database.js"></script>
+
+  <script src="./fireConfig.js"></script>
+
+  <script src="./users.js"></script>
+</body>
+
+</html>

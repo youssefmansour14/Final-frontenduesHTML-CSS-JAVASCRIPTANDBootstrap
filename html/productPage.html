@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product-page</title>
+    <!-- link to use font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/productPage.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+</head>
+<body>
+    <header id="header"></header>
+    <div class="product">
+        <div class="cart-icon">
+           <a href="checkout.html">
+                <i class="fa fa-cart-shopping"></i>
+            </a>
+        </div>
+        <!-- <div class="home-icon">
+            <a href="home.html">
+                <i class="fa-solid fa-house"></i>
+            </a>
+        </div> -->
+        <div class="card">
+            <div class="imgbox">
+                <img src="../resources/3.webp" alt="product image" id="productImage">
+            </div>
+            <div class="details">
+                <h3 class="product-title" id="productTitle">
+                    Adidas Black T-Shirt
+                </h3>
+                <span class="category" id="productCategory">mens t-shirts</span>
+                <h4>product-details</h4>
+                <p class="product-details" id="product-description"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita aut minima sequi, commodi neque dolores esse amet fugit asperiores recusandae aperiam laborum, iusto, facilis doloremque. Accusamus labore vitae animi enim.</p>
+                <h4>Size</h4>
+                <ul class="sizes">
+                    <li>38</li>
+                    <li>36</li>
+                    <li>32</li>
+                    <li>30</li>
+                </ul>
+                <div class="group">
+                    <h3 class="product-price" id="product-price">
+                        $258
+                    </h3>
+                    <button type="button" id="btn-buy">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- to show the feedback about this product -->
+    <div class="feedbacks" id="feedbacks">
+        <!-- <div class="itemContainer">
+            <h2>User Name</h2>
+            <p>the feedback </p>
+        </div> -->
+    </div>
+    <footer id="footer"></footer>
+    <!-- js ajax -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $("#footer").load("footer.html");
+            $("#header").load("header.html");
+        })
+    </script>
+    <!-- script file to get data -->
+    <script src="../js/productPage.js"></script>
+    <script src="../js/addProductTocard.js"></script>
+    <script src="../js/registeration.js"></script>
+</body>
+</html>

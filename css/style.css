@@ -1,0 +1,227 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    background-color: #FFFFFF;
+}
+
+/* main */
+
+.sectionTitle{
+    font-style: italic;
+    text-transform: uppercase;
+    background-color: #f2f2f2;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* arrow icon */
+.fa-solid{
+    font-size: 2rem;
+    padding: 1rem;
+}
+.fa-solid:hover{
+    background-color: aquamarine;
+}
+/* product title */
+h3{
+    text-align: center;
+    font-size: 1rem;
+    margin: 0;
+    padding-top: 1rem;
+    text-transform: capitalize;
+}
+
+/* section container */
+.productInfo{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #f2f2f2;
+}
+
+/* product info container */
+.content{
+    position: relative;
+    height: 30rem;
+    width: 25%;
+    box-sizing: border-box;
+    margin: 1rem;
+    text-align: center;
+    border-radius: 2.5rem;
+    padding-top: 1rem;
+    cursor: pointer;
+    background-color: #f2f2f2;
+    transition: 0.5s;
+    box-shadow: 0 1rem 2rem 0 #a8a7a7,
+    0 0.8rem 0.8rem 0 #a8a5f5;
+    overflow: hidden;
+}
+/* product info container hover */
+.content:hover{
+    box-shadow: 0 0.2rem 0.3rem 0 #a8a8b8,
+    0 0.2rem 0.2rem 0 #a8a8b8;
+    transform: translate(0 , -0.5rem);
+}
+/* product image */
+.content img{
+    width: 15rem;
+    height: 15rem;
+    border-top-left-radius: 2.5rem;
+    border-top-right-radius: 2.5rem;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+/* product description */
+.content p{
+    text-align: center;
+    color: gray;
+    padding: 0 0.5rem;
+    padding-top: 0 1rem;
+    text-transform: capitalize;
+}
+/* Product price */
+.content h6{
+    font-size: 1.5rem;
+    margin: 0;
+    text-align: center;
+    color: darkslategray;
+}
+/* Rating Star hover */
+.content ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+}
+/* Rating Star hover */
+.content ul li{
+    padding-top: 0.3rem;
+}
+/* Rating Star hover */
+.content .fa, .content .bx{
+    font-size: 1.5rem;
+    margin: 0.2rem;
+    transition: 0.5s;
+}
+
+/* Rating Star hover */
+.content .checked{
+    color: gold;
+}
+/* Rating Star hover */
+.content .fa:hover{
+    transform: scale(1.3);
+    transition: 0.5s;
+}
+/* Buy Now Button */
+.content button{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom-right-radius: 2.5rem;
+    border-bottom-left-radius: 2.5rem;
+    padding: 1rem;
+    margin-top: 0.3rem;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.5rem;
+    background: black;
+    color: gold;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+/* Sales */
+/* product info container */
+
+.productContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+    height: 35rem;
+    border: 0.3rem aliceblue solid;
+    border-radius: 3rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    font-style: italic;
+    transition: 0.5s;
+    margin: 0.5rem 0.2rem;
+    overflow: hidden;
+    box-shadow: 0.5rem 0.5rem 0.5rem 0 lightgray;
+    position: relative;
+}
+/* product info container hover */
+.productContainer:hover{
+    box-shadow: 0.2rem 0.2rem 1rem 0 gray;
+    translate: 0 -0.5rem;
+}
+/* product image */
+.productContainer img{
+    width: 100%;
+    height: 20rem;
+    /* margin: 0.5rem auto; */
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+/* product button */
+.productContainer button{
+    width: 100%;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    padding: 1rem 0;
+    background-color: black;
+    font-size: 1.5rem;
+    color: gold;
+}
+/* product button hover */
+.productContainer button:hover{
+    cursor: pointer;
+}
+/* sale discount */
+.sale{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 1rem;
+    background-color: goldenrod;
+    border-radius: 1rem;
+    font-weight: bold;
+    color: white;
+}
+.actualPrice{
+    text-decoration: line-through;
+    color: gray;
+}
+
+.notFound{
+    text-align: center;
+    font-size: 3rem;
+    padding: 15rem 20rem;
+}
+
+@media (max-width : 600px){
+    .content{
+        width: 80%;
+    }
+    .productContainer{
+        width: 80%;
+    }
+}
+@media(min-width : 600px) and (max-width : 1000px){
+    .content{
+        width: 40%;
+    }
+    .productContainer{
+        width: 40%;
+    }
+}

@@ -1,0 +1,83 @@
+footer {
+    color: #CBB26A;
+    width: 100%;
+    background-color: #333;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer img {
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 150px;
+    left: 5px;
+    height: 100px;
+    float: left;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 18px;
+    transition: color 0.2s ease-in-out;
+    height: 100%;
+}
+
+footer a :hover {
+    color: #CBB26A;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 18px;
+    transition: color 0.2s ease-in-out;
+    height: 100%;
+    scale: calc(1.2);
+}
+
+
+
+
+.icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+}
+
+.facebook {
+    background-image: url('../resources/facebook-icon.png');
+    width: 70px;
+    height: 70px;
+}
+
+.youtube {
+    background-image: url('../resources/youtube-icon.png');
+    width: 70px;
+    height: 70px;
+}
+
+.linkedin {
+    background-image: url('../resources/linkedin-icon.png');
+    width: 70px;
+    height: 70px;
+}
+
+.twitter {
+    background-image: url('../resources/twitter-icon.png');
+    width: 70px;
+    height: 70px;
+}
+
+.email {
+    background-image: url('../resources/email-icon.png');
+    width: 70px;
+    height: 70px;
+}
